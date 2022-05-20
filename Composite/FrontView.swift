@@ -267,43 +267,51 @@ struct AddItemViewModal: View {
                     VStack {
                         HStack {
                             Text("Name: ")
+                                .font(.headline)
                             Spacer()
                         }
                         HStack {
                             Spacer()
                             TextField("insert name", text: $newName)
+                                .font(.subheadline)
                         }
                     }
                     VStack {
                         HStack {
                             Text("Description: ")
+                                .font(.headline)
                             Spacer()
                         }
                         HStack {
                             Spacer()
                             TextField("write description", text: $newDesc)
+                                .font(.subheadline)
                         }
                     }
                     VStack {
                         HStack {
                             Text("Cost: ")
+                                .font(.headline)
                             Spacer()
                         }
                         HStack {
                             Spacer()
                             TextField("in Rupiah", text: $newCost)
                                 .keyboardType(.decimalPad)
+                                .font(.subheadline)
                         }
                     }
                     VStack {
                         HStack {
                             Text("Time: ")
+                                .font(.headline)
                             Spacer()
                         }
                         HStack {
                             Spacer()
                             TextField("in hour...", text: $newTime)
                                 .keyboardType(.decimalPad)
+                                .font(.subheadline)
                         }
                     }
                 }
